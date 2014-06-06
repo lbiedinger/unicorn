@@ -1,3 +1,9 @@
+PATH
+  remote: /media/shared/blorgh
+  specs:
+    blorgh (0.0.1)
+      rails (~> 4.0.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -107,6 +113,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  blorgh!
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
