@@ -6,6 +6,6 @@ class Blorgh::Post <ActiveRecord::Base
   end
 
   def summary
-    "#{title} - #{text} it works! #{self.methods}"
+    "#{title} - #{text}"
   end
 end
