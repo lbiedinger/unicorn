@@ -1,4 +1,5 @@
 class Blorgh::Post <ActiveRecord::Base
+  include ActionView::Helpers::TextHelper
   include Blorgh::Concerns::Post
 
   def time_since_created
@@ -6,6 +7,6 @@ class Blorgh::Post <ActiveRecord::Base
   end
 
   def summary
-    "#{title} - #{text}"
+    "#{title} - #{truncate(text)}"
   end
 end
